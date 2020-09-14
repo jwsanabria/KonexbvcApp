@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ea292b6-403f-48d7-9a5e-040666499c08" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/KonexbvcApp/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/KonexbvcApp/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonexbvcApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/KonexbvcApp/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KonexbvcApp/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#227#236#0" expanded="true" />
               </folding>
@@ -90,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="493">
+              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
               <folding>
                 <element signature="e#311#320#0" expanded="true" />
               </folding>
@@ -170,9 +170,9 @@
         <option value="$PROJECT_DIR$/tramites/templates/tramites/registrarTramite.html" />
         <option value="$PROJECT_DIR$/tramites/views.py" />
         <option value="$PROJECT_DIR$/tramites/urls.py" />
-        <option value="$PROJECT_DIR$/KonexbvcApp/settings.py" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/index.html" />
         <option value="$PROJECT_DIR$/KonexbvcApp/wsgi.py" />
+        <option value="$PROJECT_DIR$/KonexbvcApp/settings.py" />
       </list>
     </option>
   </component>
@@ -412,22 +412,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
+    <entry file="file://$PROJECT_DIR$/KonexbvcApp/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#311#320#0" expanded="true" />
+            <element signature="e#227#236#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KonexbvcApp/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="493">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
           <folding>
-            <element signature="e#227#236#0" expanded="true" />
+            <element signature="e#311#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
