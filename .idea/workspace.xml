@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ea292b6-403f-48d7-9a5e-040666499c08" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tramites/templates/tramites/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/templates/tramites/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KonexbvcApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/KonexbvcApp/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -90,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="131" column="59" lean-forward="true" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
+            <state relative-caret-position="493">
+              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
               <folding>
                 <element signature="e#311#320#0" expanded="true" />
               </folding>
@@ -149,8 +149,8 @@
     <findStrings>
       <find>static</find>
       <find>style</find>
-      <find>newbiz</find>
       <find>BASE_DIR</find>
+      <find>newbiz</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -171,8 +171,8 @@
         <option value="$PROJECT_DIR$/tramites/views.py" />
         <option value="$PROJECT_DIR$/tramites/urls.py" />
         <option value="$PROJECT_DIR$/KonexbvcApp/wsgi.py" />
-        <option value="$PROJECT_DIR$/KonexbvcApp/settings.py" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/index.html" />
+        <option value="$PROJECT_DIR$/KonexbvcApp/settings.py" />
       </list>
     </option>
   </component>
@@ -384,32 +384,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KonexbvcApp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#637#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KonexbvcApp/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#227#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="131" column="59" lean-forward="true" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
-          <folding>
-            <element signature="e#311#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -428,6 +408,26 @@
             <element signature="e#22306#22311#0" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#7;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#35912#35918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KonexbvcApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="e#311#320#0" expanded="true" />
           </folding>
         </state>
       </provider>
