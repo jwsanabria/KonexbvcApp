@@ -12,7 +12,7 @@ class TramitesView(CreateView):
     model = Tramite
     template_name = "tramites/registrarTramite.html"
     form_class = TramiteForm
-    #success_url = reverse('konexbvc:index')
+    #success_url = reverse('Konexbvc:index')
 
     def form_valid(self, form):
         form.instance.created_by = self.request.user
