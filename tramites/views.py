@@ -8,7 +8,7 @@ def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
 
-def TramitesView(CreateView):
+class TramitesView(CreateView):
     model = Tramite
     template_name = "tramites/registrarTramite.html"
     form_class = TramiteForm
