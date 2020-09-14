@@ -3,9 +3,20 @@ from .models import *
 from django.views.generic import CreateView
 from django.urls import reverse
 from .forms import TramiteForm
+from django.views.generic import *
 
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
+
+
+class IndexView(ListView):
+    template_name = 'tramites/index.html'
+    context_object_name = 'mensaje'
+    #queryset = Personaje.objects.all()
+    #serializer_class = DeporteSerializer
+
+    def get_queryset(self):
+        return "Pagina inicial"
 
 
 class TramitesView(CreateView):

@@ -1,0 +1,14 @@
+<html>
+{% load static %}
+{# load the tag library #}
+{% load bootstrap3 %}
+
+{# load css and javascript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<div class="panel panel-primary" >
+<h1 align="center">Konexbvc</h1>
+</div>
+<a class="btn btn-default" href="{%  url 'Konexbvc:registrar_tramite' %}">Registrar</a>
+<h3>{{mensaje}}</h3>
