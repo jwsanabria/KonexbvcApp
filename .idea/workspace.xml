@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ea292b6-403f-48d7-9a5e-040666499c08" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KonexbvcApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/KonexbvcApp/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,8 +94,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="595">
+              <caret line="164" selection-start-line="164" selection-end-line="164" />
               <folding>
                 <element signature="e#311#320#0" expanded="true" />
               </folding>
@@ -199,35 +200,6 @@
               <item name="KonexbvcApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="KonexbvcApp" type="462c0819:PsiDirectoryNode" />
               <item name="KonexbvcApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KonexbvcApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KonexbvcApp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KonexbvcApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KonexbvcApp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KonexbvcApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KonexbvcApp" type="462c0819:PsiDirectoryNode" />
-              <item name="tramites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KonexbvcApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KonexbvcApp" type="462c0819:PsiDirectoryNode" />
-              <item name="tramites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KonexbvcApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KonexbvcApp" type="462c0819:PsiDirectoryNode" />
-              <item name="tramites" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="tramites" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -424,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KonexbvcApp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="595">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="e#311#320#0" expanded="true" />
           </folding>
