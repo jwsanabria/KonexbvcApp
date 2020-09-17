@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Konexbvc :: consultar trámite</title>
@@ -44,8 +43,7 @@
 </head>
 <body>
 
-
- <!-- ======= Header ======= -->
+    <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container">
 
@@ -73,22 +71,14 @@
 
         <!-- ======= About Section ======= -->
         <section id="about">
-          <div class="container">
+          <div class="container" data-aos="fade-up">
 
             <header class="section-header">
               <div class="container">
-                <h3>Registra tu trámite</h3>
+                <h1> Consultar Trámite {{ numero_tramite }}</h1>
               </div>
             </header>
-              <div class="row about-container">
-
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button class="btn btn-success" type="submit">Guardar</button>
-    <a class="btn btn-default" href="{%  url 'Konexbvc:index' %}">Cancelar</a>
-</form>
-              </div>
+              <div class="row about-container"></div>
           </div>
         </section>
     </main>
@@ -108,5 +98,6 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+
 </body>
 </html>

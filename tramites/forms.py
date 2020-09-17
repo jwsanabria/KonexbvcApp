@@ -20,5 +20,18 @@ class TramiteForm(forms.ModelForm):
             'solicitud': 'Solicitud',
         }
         widgets = {
-
+            'nombre': forms.TextInput(attrs={'class':'form-control'}),
+            'correo': forms.TextInput(attrs={'class':'form-control'}),
+            'tramite': forms.Select(attrs={'class':'form-control'}),
+            'comunicacion': forms.Select(attrs={'class':'form-control'}),
+            'solicitud': forms.Textarea(attrs={'class':'form-control'}),
         }
+
+
+class ConsultarTramiteForm(forms.Form):
+    numero_tramite = forms.CharField()
+    #message = forms.CharField(widget=forms.Textarea)
+
+    def send_email(self):
+        # send email using the self.cleaned_data dictionary
+        pass
