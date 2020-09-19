@@ -20,11 +20,11 @@ class TramiteForm(forms.ModelForm):
             'solicitud': 'Solicitud',
         }
         widgets = {
-            'nombre': forms.TextInput(attrs={'class':'form-control'}),
-            'correo': forms.TextInput(attrs={'class':'form-control'}),
-            'tramite': forms.Select(attrs={'class':'form-control'}),
-            'comunicacion': forms.Select(attrs={'class':'form-control'}),
-            'solicitud': forms.Textarea(attrs={'class':'form-control'}),
+            'nombre': forms.TextInput(attrs={'class':'form-control', 'placeholder':'Ingrese su nombre'}),
+            'correo': forms.EmailInput(attrs={'class':'form-control', 'aria-describedby':'emailHelp', 'placeholder':'Ingrese su email'}),
+            'tramite': forms.Select(attrs={'class':'form-control', 'placeholder':'Tipo de trámite'}),
+            'comunicacion': forms.Select(attrs={'class':'form-control', 'placeholder':'Medio de respuesta'}),
+            'solicitud': forms.Textarea(attrs={'class':'form-control','placeholder':'Ingrese su solicitud', 'rows':10}),
         }
 
 
