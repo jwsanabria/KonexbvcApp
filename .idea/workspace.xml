@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ea292b6-403f-48d7-9a5e-040666499c08" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KonexbvcApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/KonexbvcApp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tramites/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tramites/templates/tramites/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/templates/tramites/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tramites/templates/tramites/registrarTramite.html" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/templates/tramites/registrarTramite.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,8 +76,8 @@
       <file leaf-file-name="consultarTramite.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
+            <state relative-caret-position="379">
+              <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -698,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
+        <state relative-caret-position="379">
+          <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
         </state>
       </provider>
     </entry>
