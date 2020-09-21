@@ -104,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="588">
-              <caret line="303" column="52" selection-start-line="303" selection-start-column="52" selection-end-line="303" selection-end-column="52" />
+              <caret line="305" column="49" lean-forward="true" selection-start-line="305" selection-start-column="49" selection-end-line="305" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -733,7 +733,7 @@
     <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
-          <caret line="303" column="52" selection-start-line="303" selection-start-column="52" selection-end-line="303" selection-end-column="52" />
+          <caret line="305" column="49" lean-forward="true" selection-start-line="305" selection-start-column="49" selection-end-line="305" selection-end-column="49" />
         </state>
       </provider>
     </entry>
