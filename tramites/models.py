@@ -26,4 +26,4 @@ class Tramite(models.Model):
     estado = models.CharField(max_length=11, choices=ESTADO_CHOICES)
 
     def __str__(self):
-        return self.tramite_text
+        return '{} email {}'.format(self.nombre, self.correo)

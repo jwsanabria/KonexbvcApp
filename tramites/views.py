@@ -7,6 +7,31 @@ from .forms import TramiteForm, ConsultarTramiteForm
 from django.views.generic import *
 from django.views.generic.edit import FormView
 from django.shortcuts import render
+from django.template.loader import render_to_string
+from django.core.mail import EmailMessage
+from django.conf import settings
+from django.core.mail import EmailMultiAlternatives
+from django.core.mail import send_mail
+from django.template.loader import get_template
+
+def send_user_mail(nombre, email, numero_solicitud):
+    subject = 'Registro de rádicado en Konexbvc'
+    template = get_template('email_content.html')
+    content = template.render({
+        'nombre': nombre,
+        'tipo_solicitud': 'Radicado de prueba',
+        'fecha_respuesta': '30 de septiembre de 2020',
+        'numero_solicitud': numero_solicitud,
+    })
+    message = EmailMultiAlternatives(subject, #Titulo
+                                    '',
+                                    settings.EMAIL_HOST_USER, #Remitente
+                                    [email]) #Destinatario
+
+    message.attach_alternative(content, 'text/html')
+    message.send()
+
+
 
 def index(request):
     return render(request, 'tramites/index.html')
@@ -39,11 +64,14 @@ class TramitesView(CreateView):
     model = Tramite
     template_name = "tramites/registrarTramite.html"
     form_class = TramiteForm
-    #success_url = reverse('Konexbvc:index')
+    success_url = '/tramites/'
 
     def form_valid(self, form):
         form.instance.created_by = self.request.user
-        return super(TramitesView, self).form_valid(form)
+        tramite = form.save()
+
+        send_user_mail(tramite.nombre, tramite.correo, tramite.id)
+        return super().form_valid(form)
 
 
 class ConsultarTramiteView(FormView):
