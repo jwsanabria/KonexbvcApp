@@ -13,6 +13,10 @@ from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
 from django.core.mail import send_mail
 from django.template.loader import get_template
+import random
+import datetime
+from django.contrib import messages
+
 
 def send_user_mail(nombre, email, numero_solicitud):
     subject = 'Registro de rádicado en Konexbvc'
@@ -38,10 +42,39 @@ def index(request):
 
 
 def detalleTramite(request):
+    model = Tramite
     context = {}
     numero_tramite = request.POST.get('numero_tramite', None)
-    context['numero_tramite'] = numero_tramite
-    return render(request, 'tramites/consultarTramite.html', context)
+
+    try:
+        if numero_tramite is not None and numero_tramite is not '' and int(numero_tramite):
+            tramite = Tramite.objects.get(pk=numero_tramite)
+
+            areas = ['Soporte TI', 'Documento Electrónico', 'Soporte Nivel 3', 'Ofimatica', 'Equipo Comercial']
+            area_encargada = random.choice(areas)
+
+            id_estado = random.choice(range(5))
+            estados = ['Registrado', 'Asignado a un asesor', 'En proceso', 'Cumplimiento y calidad', 'Solucionado']
+
+            estado = estados[id_estado - 1]
+
+            context['numero_tramite'] = numero_tramite
+            context['tramite'] = tramite
+            context['area_encargada'] = area_encargada
+            context['estado'] = estado
+            context['id_estado'] = id_estado
+            context['dias_solucion'] = 7 - id_estado
+            context['fecha_solucion'] = tramite.fecha_registro + datetime.timedelta(days=7)
+
+            return render(request, 'tramites/consultarTramite.html', context)
+
+        else:
+            messages.add_message(request, messages.WARNING, 'Debe ingresar un valor númerico')
+            return render(request, 'tramites/index.html')
+    except (Tramite.DoesNotExist, ValueError):
+        messages.add_message(request, messages.WARNING, 'Debe ingresar un valor númerico')
+        return render(request, 'tramites/index.html')
+
 
 
 class IndexView(FormView):
@@ -49,6 +82,8 @@ class IndexView(FormView):
     context_object_name = 'mensaje'
     form_class = ConsultarTramiteForm
     success_url = '/tramites/detalle_tramite'
+
+
     #queryset = Personaje.objects.all()
     #serializer_class = DeporteSerializer
 

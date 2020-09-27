@@ -24,6 +24,7 @@ class Tramite(models.Model):
     comunicacion = models.CharField(max_length=6, choices=PREFERENCIA_CHOICES)
     solicitud = models.CharField(max_length=2000)
     estado = models.CharField(max_length=11, choices=ESTADO_CHOICES)
+    fecha_registro = models.DateField(auto_now=True)
 
     def __str__(self):
         return '{} email {}'.format(self.nombre, self.correo)

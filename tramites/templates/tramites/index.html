@@ -71,7 +71,13 @@
 
       <div class="intro-info" data-aos="zoom-in" data-aos-delay="100">
         <h2>¡Registra o consulta<br>el <span>estado</span> de tus solicitudes!</h2>
-
+            {% if messages %}
+            <ul class="messages text-white">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
             <form method="post" action="{% url 'Konexbvc:detalle_tramite' %}" >
               {% csrf_token %}
               <div class="form-group">

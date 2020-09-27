@@ -29,7 +29,7 @@ class TramiteForm(forms.ModelForm):
 
 
 class ConsultarTramiteForm(forms.Form):
-    numero_tramite = forms.CharField()
+    numero_tramite = forms.IntegerField()
     #message = forms.CharField(widget=forms.Textarea)
 
     def send_email(self):

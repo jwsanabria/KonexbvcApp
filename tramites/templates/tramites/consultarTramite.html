@@ -57,11 +57,6 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="{% url 'Konexbvc:index' %}">Home</a></li>
-          <li><a href="#about">Sobre nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#team">Equipo</a></li>
-          <li><a href="#contact">Contáctenos</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -86,39 +81,59 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
 <div class="container padding-bottom-3x mb-1">
         <div class="card mb-3">
-          <div class="p-4 text-center text-white text-lg bg-dark rounded-top"><span class="text-uppercase">Trámite No - </span><span class="text-medium">{{ numero_tramite }}</span></div>
+          <div class="p-4 text-center text-white text-lg bg-dark rounded-top">Hola <span class="text-uppercase">{{tramite.nombre}}</span>, este es el estado de tu trámite No - <span class="text-medium">{{ numero_tramite }}</span></div>
           <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between py-3 px-2 bg-secondary text-white">
-            <div class="w-100 text-center py-1 px-2"><span class="text-medium">Area encargada:</span> Operaciones TI</div>
-            <div class="w-100 text-center py-1 px-2"><span class="text-medium">Estado:</span> En proceso</div>
-            <div class="w-100 text-center py-1 px-2"><span class="text-medium">Fecha de solución:</span> SEP 30, 2017</div>
+            <div class="w-100 text-center py-1 px-2"><span class="text-medium">Area encargada:</span> {{area_encargada}}</div>
+            <div class="w-100 text-center py-1 px-2"><span class="text-medium">Estado:</span> {{estado}}</div>
+            <div class="w-100 text-center py-1 px-2"><span class="text-medium">Fecha de solución:</span> {{fecha_solucion}} </div>
           </div>
           <div class="card-body">
             <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x">
+              {% if id_estado >= 1 %}
               <div class="step completed">
+                {% else %}
+               <div class="step">
+                 {% endif  %}
                 <div class="step-icon-wrap">
                   <div class="step-icon"><i class="pe-7s-note"></i></div>
                 </div>
                 <h4 class="step-title">Registrado</h4>
               </div>
+              {% if id_estado >= 2 %}
               <div class="step completed">
+                {% else %}
+               <div class="step">
+                 {% endif  %}
                 <div class="step-icon-wrap">
                   <div class="step-icon"><i class="fa fa-user-circle"></i></div>
                 </div>
                 <h4 class="step-title">Asignado a un asesor</h4>
               </div>
+             {% if id_estado >= 3 %}
               <div class="step completed">
+                {% else %}
+               <div class="step">
+                 {% endif  %}
                 <div class="step-icon-wrap">
                   <div class="step-icon"><i class="fa fa-spinner"></i></div>
                 </div>
                 <h4 class="step-title">En proceso</h4>
               </div>
-              <div class="step">
+             {% if id_estado >= 4   %}
+              <div class="step completed">
+                {% else %}
+               <div class="step">
+                 {% endif  %}
                 <div class="step-icon-wrap">
                   <div class="step-icon"><i class="fa fa-bell"></i></div>
                 </div>
                 <h4 class="step-title">Cumplimiento y calidad</h4>
               </div>
-              <div class="step">
+              {% if id_estado >= 5 %}
+              <div class="step completed">
+                {% else %}
+               <div class="step">
+                 {% endif  %}
                 <div class="step-icon-wrap">
                   <div class="step-icon"><i class="pe-7s-medal"></i></div>
                 </div>
@@ -131,16 +146,16 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 bg-dark text-white font-weight-bold">
-              Tu solicitud ha completado 1 día(s) en estado En proceso
+              Tu solicitud ha completado 1 día(s) en estado {{ estado }}
             </div>
             <div class="col-sm-12 bg-light">
-              <p>- Nos enviaste tu solicitud el 16/09/2020</p>
+              <p>- Nos enviaste tu solicitud el {{ tramite.fecha_registro|date:"c" }}</p>
             </div>
             <div class="col-sm-12 bg-dark text-white font-weight-bold">
               A hoy el avance de tu solicitud es 33%
             </div>
             <div class="col-sm-12 bg-light">
-              <p>- Tu  solicitud será solucionada en 2 días</p>
+              <p>- Tu  solicitud será solucionada en 7 días</p>
             </div>
           </div>
         </div>
