@@ -77,6 +77,15 @@
             </header>
               <div class="row about-container">
 
+                  {% if messages %}
+  {% for msg in messages %}
+    <div class="alert alert-info alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      {{msg.message}}
+    </div>
+  {% endfor %}
+{% endif %}
+
                   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
                 <div class="container padding-bottom-3x mb-1">
                     <div class="card mb-3">
@@ -87,6 +96,13 @@
                             <form method="post">
                                 {% csrf_token %}
                                 {{form.as_p }}
+                                <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">"Autorizo a bvc para transferir, transmitir, usar y tratar mis datos personales con la finalidad de su objeto social y legal, para fines comerciales, validación de identidad, encuestas, comunicaciones, cursos, contenidos publicitarios, investigaciones de mercado y dar soporte a PQRS, conforme con las políticas de protección de datos y la autorización de manejo de datos personales de bvc y filiales, disponibles para su consulta en www.bvc.com.co”
+                                    </label>
+                                </div>
+                                </div>
                                 <button class="btn btn-primary mb-2" type="submit">Guardar</button>
                                 <a class="btn btn-default" href="{%  url 'Konexbvc:index' %}">Cancelar</a>
                             </form>

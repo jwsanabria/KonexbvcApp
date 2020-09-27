@@ -106,6 +106,7 @@ class TramitesView(CreateView):
         tramite = form.save()
 
         send_user_mail(tramite.nombre, tramite.correo, tramite.id)
+        messages.info(self.request, 'Tu trámite ha sido registrsdo satisfactoriamente! Trámite No. ' + str(tramite.id))
         return super().form_valid(form)
 
 
