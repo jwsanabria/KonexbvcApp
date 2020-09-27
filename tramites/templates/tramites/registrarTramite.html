@@ -58,11 +58,6 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="{% url 'Konexbvc:index' %}">Home</a></li>
-          <li><a href="#about">Sobre nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#team">Equipo</a></li>
-          <li><a href="#contact">Contáctenos</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -88,7 +83,7 @@
                       <div class="p-4 text-center text-white text-lg bg-dark rounded-top"><span class="text-uppercase">Registra tu trámite</div>
                       <div class="p-4 text-center text-lg bg-ligth rounded-top">Déjanos tus datos y tu  mensaje y nuestro equipo te contactará</div>
                         <div class="card-body">
-                        <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x">
+                        <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x col-lg-12 ">
                             <form method="post">
                                 {% csrf_token %}
                                 {{form.as_p }}
