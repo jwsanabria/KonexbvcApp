@@ -105,7 +105,7 @@ class TramitesView(CreateView):
         form.instance.created_by = self.request.user
         tramite = form.save()
 
-        send_user_mail(tramite.nombre, tramite.correo, tramite.id, tramite.fecha_registro + datetime.timedelta(days=7), Tramite.TRAMITES_CHOICES[Tramite.tramite])
+        send_user_mail(tramite.nombre, tramite.correo, tramite.id, tramite.fecha_registro + datetime.timedelta(days=7), tramite.tramite)
         messages.info(self.request, 'Tu trámite ha sido registrsdo satisfactoriamente! Trámite No. ' + str(tramite.id))
         return super().form_valid(form)
 
