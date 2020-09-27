@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ea292b6-403f-48d7-9a5e-040666499c08" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/tramites/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tramites/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tramites/templates/tramites/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/templates/tramites/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tramites/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="registrarTramite.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registrarTramite.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/registrarTramite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+            <state relative-caret-position="1530">
+              <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -50,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tramites/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="459">
+              <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -176,10 +172,10 @@
         <option value="$PROJECT_DIR$/KonexbvcApp/settings.py" />
         <option value="$PROJECT_DIR$/tramites/models.py" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html" />
-        <option value="$PROJECT_DIR$/tramites/forms.py" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/index.html" />
         <option value="$PROJECT_DIR$/tramites/views.py" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/registrarTramite.html" />
+        <option value="$PROJECT_DIR$/tramites/forms.py" />
       </list>
     </option>
   </component>
@@ -652,16 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tramites/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -714,8 +700,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tramites/templates/tramites/registrarTramite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+        <state relative-caret-position="1530">
+          <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tramites/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
