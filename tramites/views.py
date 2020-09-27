@@ -18,13 +18,13 @@ import datetime
 from django.contrib import messages
 
 
-def send_user_mail(nombre, email, numero_solicitud):
+def send_user_mail(nombre, email, numero_solicitud, fecha_solucion, tipo_tramite):
     subject = 'Registro de rádicado en Konexbvc'
     template = get_template('email_content.html')
     content = template.render({
         'nombre': nombre,
-        'tipo_solicitud': 'Radicado de prueba',
-        'fecha_respuesta': '30 de septiembre de 2020',
+        'tipo_solicitud': tipo_tramite,
+        'fecha_respuesta': fecha_solucion,
         'numero_solicitud': numero_solicitud,
     })
     message = EmailMultiAlternatives(subject, #Titulo
@@ -48,7 +48,7 @@ def detalleTramite(request):
 
     try:
         if numero_tramite is not None and numero_tramite is not '' and int(numero_tramite):
-            tramite = Tramite.objects.get(pk=numero_tramite)
+            tramite = Tramite.objects.get(pk=int(numero_tramite))
 
             areas = ['Soporte TI', 'Documento Electrónico', 'Soporte Nivel 3', 'Ofimatica', 'Equipo Comercial']
             area_encargada = random.choice(areas)
@@ -105,7 +105,7 @@ class TramitesView(CreateView):
         form.instance.created_by = self.request.user
         tramite = form.save()
 
-        send_user_mail(tramite.nombre, tramite.correo, tramite.id)
+        send_user_mail(tramite.nombre, tramite.correo, tramite.id, tramite.fecha_registro + datetime.timedelta(days=7), Tramite.TRAMITES_CHOICES[Tramite.tramite])
         messages.info(self.request, 'Tu trámite ha sido registrsdo satisfactoriamente! Trámite No. ' + str(tramite.id))
         return super().form_valid(form)
 
