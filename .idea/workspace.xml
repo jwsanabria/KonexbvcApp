@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ea292b6-403f-48d7-9a5e-040666499c08" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tramites/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tramites/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tramites/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tramites/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tramites/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="510">
+              <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -173,12 +173,12 @@
         <option value="$PROJECT_DIR$/static/assets/css/style.css" />
         <option value="$PROJECT_DIR$/tramites/templates/email_content.html" />
         <option value="$PROJECT_DIR$/KonexbvcApp/settings.py" />
-        <option value="$PROJECT_DIR$/tramites/models.py" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/consultarTramite.html" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/index.html" />
         <option value="$PROJECT_DIR$/tramites/forms.py" />
         <option value="$PROJECT_DIR$/tramites/templates/tramites/registrarTramite.html" />
         <option value="$PROJECT_DIR$/tramites/views.py" />
+        <option value="$PROJECT_DIR$/tramites/models.py" />
       </list>
     </option>
   </component>
@@ -292,7 +292,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13119073" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -723,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tramites/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tramites/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -737,6 +729,13 @@
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tramites/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
         </state>
       </provider>
     </entry>

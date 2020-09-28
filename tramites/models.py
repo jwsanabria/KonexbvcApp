@@ -6,7 +6,8 @@ class Tramite(models.Model):
     TRAMITES_CHOICES = [
         ('DONACION', 'Donación'),
         ('SUCESION', 'Sucesión'),
-        ('ACT_DATO', 'Actualización datos')
+        ('ACT_DATO', 'Actualización datos'),
+        ('SUGE_CIA', 'Sugerencias')
     ]
     PREFERENCIA_CHOICES = [
         ('CORREO', 'Correo'),
